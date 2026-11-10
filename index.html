@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vectura · Know the cost before you commit</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="aurora"><i></i><i></i><i></i></div>
+<nav class="nav"><div class="w nv"><div class="logo"><span class="mk">V</span>Vectura</div>
+<div class="links"><a href="#est">Estimate</a><a href="#live">Live metrics</a><a href="#dir">Directory</a><a href="#how">How it works</a></div>
+<div class="nr"><button class="btn g" id="cb">🌍 Location</button><a class="btn" href="#est">Start estimate</a></div></div></nav>
+
+<header class="w hero">
+<div class="hl"><span class="pill">✦ Prices, conditions and pros in one place</span>
+<h1>Know the cost.<br>Know the conditions.<br><em>Book with confidence.</em></h1>
+<p class="sub">Scope your project in seconds, see live weather, air quality and exchange rates for your destination, and send providers your plan already attached.</p>
+<div class="cta"><a class="btn big" href="#est">Get my instant estimate →</a><a class="btn g big" href="#dir">Browse providers</a></div>
+<div class="stats"><div><b class="mono" data-n="190">0</b><small>countries, with their states</small></div><div><b>Live</b><small>weather and air quality</small></div><div><b>Daily</b><small>exchange rates</small></div></div></div>
+<div class="hr"><div class="float card"><small>YOUR ESTIMATE · LIVE</small><div class="hp mono" id="hp"></div><div class="bar"><i style="width:82%"></i></div><div class="row"><span class="pill ok"><span id="pc">0</span> providers fit</span><span class="pill">☀ Conditions: <b id="hs">…</b></span></div></div>
+<div class="float f2 card"><small>QUOTE REQUEST</small><b>Scope attached → Email ready</b></div></div>
+</header>
+
+<div class="marq"><div><span>Instant price scoping</span><span>Live weather data</span><span>Live exchange rates</span><span>Local price levels</span><span>Country and state coverage</span><span>Instant price scoping</span><span>Live weather data</span><span>Live exchange rates</span><span>Local price levels</span><span>Country and state coverage</span></div></div>
+
+<main class="w">
+<section id="est" class="rv"><h2>Build your budget</h2><p class="k">Move a control and watch the number respond.</p>
+<div class="est"><div class="card"><label class="l">Project type</label><div class="chips" id="types"></div>
+<label class="l">Scale <span id="szv" class="mono"></span></label><input type="range" id="size" min="10" max="500" value="80">
+<label class="l">Features</label><div class="chips" id="feats"></div>
+<label class="l">Quality tier</label><div class="chips" id="tiers"></div></div>
+<div class="card res"><label class="l">Estimated range · <span id="cn"></span></label><div class="big mono" id="rng"></div>
+<p class="k" id="basis" style="font-size:12px;margin:8px 0 0"></p>
+<label class="l">Confidence</label><div class="bar"><i id="conf"></i></div>
+<div class="dw"><div class="donut" id="dn"></div><div class="leg" id="lg"></div></div>
+<div class="cta"><a class="btn" href="#dir">See matched providers</a><button class="btn g" id="sv">Save my scope</button></div></div></div></section>
+
+<section id="live" class="rv"><h2>Live conditions for <span class="gt" id="cn2"></span></h2>
+<div class="grid" id="mt" style="margin-top:22px"></div>
+<label class="chk"><input type="checkbox" id="ap" checked> Apply to my project</label></section>
+
+<section id="dir" class="rv"><h2>Providers that fit</h2><p class="k">Matched to your budget and location.</p>
+<div class="top"><span class="pill mono" id="bchip"></span><label class="chk"><input type="checkbox" id="fit" checked> Only show providers that fit</label></div>
+<div class="lst" id="ls"></div></section>
+
+<section id="how" class="rv"><h2>Four steps. Zero guesswork.</h2><div class="steps"><div class="card"><b>0</b>Choose your country and state</div><div class="card"><b>1</b>Calculate your budget</div><div class="card"><b>2</b>Review live conditions</div><div class="card"><b>3</b>Match and connect</div></div></section>
+
+<section class="rv"><div class="final"><h2>Stop guessing. Start scoping.</h2><a class="btn big inv" href="#est">Start your estimate</a></div></section>
+</main>
+<footer class="w">Estimates are planning ranges, not binding quotes.</footer>
+
+<div id="ov"><div class="box"><h2 id="ovt">Where are you going?</h2><p class="k" id="ovk">Pick a country, then a state or region.</p><input type="text" id="q" placeholder="Search countries"><div id="cl"></div></div></div>
+<div id="dr"><div class="box" id="drb"></div></div>
+
+<script src="script.js"></script>
+</body>
+</html>
